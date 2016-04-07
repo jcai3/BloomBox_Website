@@ -1,0 +1,179 @@
+<div id="main-container" class="fount-media-detail">
+  <div id="page-wrap">
+    <div class="page-content clearfix">
+      <div class="inner-page-wrap has-no-sidebar clearfix">
+        <article class="clearfix product type-product status-publish has-post-thumbnail product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers product_shipping_class-standard-shipping pa_colour-grey pa_colour-red pa_size-eu41-us8 pa_size-eu42-us9 pa_size-eu43-us10 pa_size-eu45-us12 pa_fabric-leather-2 pa_fabric-mesh pa_fabric-suede sale shipping-taxable purchasable product-type-simple product-cat-footwear product-cat-sneakers product-tag-adidas product-tag-sneakers instock">
+          <div class="page-content clearfix">
+            <section class="article-body-wrap">
+              <div class="product type-product status-publish has-post-thumbnail product_cat-footwear product_cat-sneakers product_tag-adidas product_tag-sneakers product_shipping_class-standard-shipping pa_colour-grey pa_colour-red pa_size-eu41-us8 pa_size-eu42-us9 pa_size-eu43-us10 pa_size-eu45-us12 pa_fabric-leather-2 pa_fabric-mesh pa_fabric-suede sale shipping-taxable purchasable product-type-simple product-cat-footwear product-cat-sneakers product-tag-adidas product-tag-sneakers instock">
+                <div class="media-container">
+                  <div class="media-summary">
+	                  <div class="media-images mediaimages">
+	                  	<script src="//players.brightcove.net/1752604059001/217b1cd8-54d5-4ac7-b213-268a81d5081f_default/index.min.js"></script>
+	                  	<div class="fittobox">
+	           				<video
+	           					id="video"
+	           				    onClick="playPause();"
+	           					data-player="217b1cd8-54d5-4ac7-b213-268a81d5081f"
+		           				poster="{{discoverMedia.standardResolutionURL}}" 
+		           				ng-show="discoverMedia.videoStandardResolutionURL != null" 
+		           				ng-src="{{trustSrc(discoverMedia.videoStandardResolutionURL)}}" 
+		           				data-embed="default" 
+		           				class="video-js">
+							  Your browser does not support the <code>video</code> element.
+							</video>
+		                    <div class="image-figure" ng-show="discoverMedia.videoStandardResolutionURL == null">
+		                    	<img ng-show="discoverMedia.videoStandardResolutionURL == null" id="image" src="{{discoverMedia.standardResolutionURL}}" fount-err-src="img/err-src.png"/>
+		                    </div>
+	                    </div>
+	                  </div>
+	                  <div class="media-info mediasummary">
+	                    <div class="summary-top clearfix">
+							<ul>
+								<li><img alt="item pic" src="{{discoverMedia.instagramUserProfileUrl}}" width=100px; fount-err-src="img/err-src.png"/></li>
+								<li><div class="brandName">{{discoverMedia.instagramUserName}}</div></li>
+								<li><div class="like-counts"><center><div><img id="like-img" alt="like" src="img/like.png" width=80px; ng-click="likeMedia(discoverMedia)"/></div><div>{{discoverMedia.likes}}</div></center></div>
+								</li>
+							</ul>
+	                    </div>
+	                    <div class="summary-top clearfix">
+							<div class="caption accordion-toggle">{{discoverMedia.caption}}</div>
+						</div>
+	
+						<div class="likedUser">
+		                    <div class="summary-top clearfix media-user-likes">
+		                    	
+									<li	ng-repeat="x in discoverUsers track by $index"
+										class="likedUser-list"
+										id="fount-liked_user_{{$index}}">
+										<figure>
+											<div class="likedUserProfile-img">
+					 							<img ng-src="{{x.igProfilePicture}}" fount-err-src="img/err-src.png">
+											</div>
+										</figure>
+									</li>
+									<br>
+								<div class="likes mweblikes">
+			                    	<div class="likes-count">{{discoverMedia.moreLikes}} likes</div>
+			                    	<a href="#" class="more">more</a>
+		                    	</div>
+		                    </div>
+		                 </div>                  
+	                  </div>
+	                 <!--  <table>
+	                  	<tr>
+	                  		<th>FILTER</th>
+	                  		<th>BRANDS</th>
+	                  		<th>PRICE</th>
+	                  		<th> 	 </th>
+	                  		<th>SORT BY</th>	                  		
+	                  	</tr>
+	                  	<tr>
+	                  	
+	                  	</tr>
+	                  </table> -->
+	                  <!-- <div class="media-filter">
+							<div class="filter">
+								<p>FILTER</p>
+								<div class="dropdown">
+									<div class="dropdown">
+										BRANDS <span
+											class="caret"></span>
+									</div>
+									<div class="dropdown-menu">
+										<p>
+											<a href="#">Saint Laurent</a>
+										</p>
+										<p>
+											<a href="#">Bobbi Brown</a>
+										</p>
+										<p>
+											<a href="#">Tom Ford</a>
+										</p>
+										<p>
+											<a href="#">Charlotte Olympia</a>
+										</p>
+										<p>
+											<a href="#">Valextra</a>
+										</p>
+										<p>
+											<a href="#">Dolce & Gabbana</a>
+										</p>
+										<p>
+											<a href="#">Sisley Paris</a>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="filter">
+								<p>PRICE</p>
+								<div class="dropdown">
+									<div class="dropdown">SORT BY <span	class="caret"></span>
+									</div>
+									<div class="dropdown-menu">
+										<p>
+											<a href="#">Option A</a>
+										</p>
+										<p>
+											<a href="#">Option B</a>
+										</p>
+										<p>
+											<a href="#">Option C</a>
+										</p>
+									</div>
+								</div>
+		                  </div>
+	                  </div> -->
+	              
+		              <div class="media-product-items">
+						<div class="product-items-detail">
+							<div class="info">
+									SHOP THE <br><br>POST <br><br>
+									<br>_____
+									<br>
+									<br>
+									<br>
+									<br>
+									<br>
+							</div>
+							<div class="intro-brief">
+								A fount of products
+									tagged and inspired from the host. Have fun
+									shopping!
+							</div>
+						</div>
+						<li	ng-repeat="products in tagProductsArray track by $index"
+								class="product-items-detail"
+								id="fount-visualtag_product_{{$index}}">
+								<figure>
+									<div class="product-img">
+										<img ng-src="{{products.imageURL}}" fount-err-src="img/err-src.png"/>
+									</div>
+									<center>
+									<div class="fount-pdp-to-brand"><h1>{{products.brand.name}}</h1></div>
+									<div class="product-name"><p>{{products.name}}</p></div>
+									<div class="product-price amount">
+										{{products.price | currency}}
+									</div>
+									<div ng-click="productDetail(products.id)" class="details-btn"><input type="image" class="product-details-btn" src="http://i.imgur.com/8Ycesid.png"/></div>
+									<div class="add-to-wishlist">
+										<div><img style="display: inline-block;" alt="item pic"	src="img/wishlist.png" width=40 /></div>
+										<div>
+											<p style="display: inline-block;"><a href="#">add to wish list</a><p>
+										</div>
+									</div>
+									</center>
+								</figure>
+							</li>						
+					 </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</div>
+
+

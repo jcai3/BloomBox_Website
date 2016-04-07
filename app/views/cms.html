@@ -1,0 +1,93 @@
+<!-- catrgory mapping page -->
+<div id="main-container" class="class="clearfix">
+	<div class="page-heading  clearfix asset-bg alt-one">
+		<div class="container">
+			<div class="heading-text">
+				<h1 class="entry-title">CMS Page</h1>
+			</div>
+		</div>
+	</div>
+
+	<div class="cms-seller">
+		<div class="seller-info">
+			<div class="header">SELLER</div>
+			<div class="info">
+				<select  ng-model="one"
+					ng-options="seller.name for seller in adminSellers">
+					<option value="">Oakley</option>
+				</select>
+			</div>
+		</div>
+		<div class="seller-cate">
+			<div class="header">SELLER CATEGORY</div>
+			<div class="info ss">
+				<ul ng-repeat="category in sellerCategory track by $index">
+					<li class="sellerinfo" ng-style="myStyle" id="t-{{category.id}}">{{$index+1}} {{category.name}} ----><font color="red">{{category.mappedCategory}}</font></li>
+				</ul>
+				<div class="pageindex">
+					<div class="prev"><button id="prev-btn" class="button alt" ng-show="visibility" ng-model="two" ng-click="previousPage()"><- Previous</button></div>
+				 	<div><span class="pageNumber">-{{pageIndex}}-</span></div>
+				 	<div class="next"><button id="next-btn" class="button alt" ng-show="visibility2" ng-model="two" ng-click="nextPage()"> next -></button></div>
+			 	</div>
+			</div>
+		</div>
+		<div class="fount-cate-root">
+			<div class="header">
+				Fount Root Category
+			</div>
+			<div class="info">
+				<div ng-repeat="category in sellerCategory track by $index"
+					class="root-category" id="sub-cate-1-{{$index}}">
+					<ul>
+						{{$index+1}} 
+						<select name="repeatSelect_[$index]" id="repeatSelect_{{$index}}"
+							ng-model="selected"
+							ng-options="category as category.name for category in rootCategory track by category.id"
+							ng-change="addChildCategory({{$index}}, selected.id, 0)">
+						</select>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="fount-cate-child">
+			<div class="header">
+				Fount Sub Category
+			</div>
+			<div class="info">	
+				<ul class="child-info" ng-repeat="cate in columns track by $index">
+					<select id="sub-0-{{$index}}" class="sub-category"
+						ng-model="selected1"
+						ng-options="category as category.name for category in cate.dropdown track by category.id"
+						ng-change="addChildCategory({{$index}}, selected1.id, cate.level)">
+						<option value="">Choose your sub category</option>
+					</select>
+				</ul>
+				<div class="update_admin_seller">
+					      <input type="submit" class="button alt" value="Update" ng-click="update()">
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+
+
+
+			
+        	
+        
+        	
+
+				
+
+
+
+
+
+
+
+          
+
+
+
+
+
